@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: #3e8da8;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+nav .navbar{
+    height: 100%;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+nav .navbar .logo a{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+nav .navbar .nav-links{
+    height: 100%;
+    line-height: 70px;
+}
+nav .navbar .nav-links .links{
+    display: flex;
+}
+nav .navbar .nav-links .links li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0 14px;
+}
+nav .navbar .nav-links .links li a{
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 500;
+}
+nav .navbar .nav-links .links li .arrow{
+    height: 100%;
+    width: 22px;
+    text-align: center;
+    color: #fff;
+    line-height: 70px;
+    transition: all 0.3s ease;
+}
+.navbar .nav-links .links li:hover .htmlcss-arrow,
+.navbar .nav-links .links li:hover .js-arrow{
+    transform: rotate(180deg);
+}
+.navbar .nav-links .links .sub-menu{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #3e8da8;
+    line-height: 40px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+.navbar .nav-links .links .sub-menu li{
+    padding: 0 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.navbar .nav-links .links .sub-menu li a{
+    font-size: 15px;
+    font: 500;
+}
+/* .navbar .nav-links .links .sub-menu li .more-arrow{
+    line-height: 40px;
+} */
+.navbar .nav-links .links li:hover .htmlCss-sub-menu,
+.navbar .nav-links .links li:hover .js-sub-menu{
+    display: block;
+}
+/* .navbar .nav-links .links .more .more-sub-menu{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-radius: 0 4px 4px 4px;
+    display: none;
+} */
+/* .navbar .nav-links .links .more:hover .more-sub-menu{
+    display: block;
+
+} */
+.navbar .search-box{
+    position: relative;
+    height: 40px;
+    width: 40px;
+}
+.navbar .search-box i{
+    color: #fff;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+.navbar .search-box .input-box{
+    height: 60px;
+    width: 300px;
+    background: #3e8da8;
+    position: absolute;
+    top: 80px;
+    right: calc(100% - 40px);
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.navbar.showInput .search-box .input-box {
+    opacity: 1;
+    pointer-events: auto;
+    top: 65px;
+}
+.navbar .search-box .input-box::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: #3e8da8;
+    right: 10px;
+    top: -6px;
+    transform: rotate(45deg);
+}
+.navbar .search-box .input-box input{
+    position: absolute;
+    height: 35px;
+    width: 280px;
+    z-index: 98;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-size: 16px;
+}
+nav .navbar .in{
+    color: #3e8da8;
+}
+nav .navbar .in li a{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+table{
+    width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+table tr {
+    height: 605px;
+}
+h1{
+    font-size: 70px;
+    text-align: center;
+    padding-top: 100px;
+}
